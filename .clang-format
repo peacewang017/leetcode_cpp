@@ -1,0 +1,28 @@
+---
+Language: Cpp
+
+# 模板: Google
+BasedOnStyle: Google
+
+# 缩进空格数: 4
+IndentWidth: 4
+
+# 正花括号换行: 禁用
+BraceWrapping:
+  AfterFunction: false
+  AfterClass: false
+  AfterStruct: false
+  AfterControlStatement: false
+
+# 类构造参数换行: PCIS_BinPack (将参数全部放在下一行)
+PackConstructorInitializers: BinPack
+
+# 最大列宽: 无限
+ColumnLimit: 0
+
+# 简单代码行压缩: 禁用
+AllowShortFunctionsOnASingleLine: false
+AllowShortIfStatementsOnASingleLine: false
+
+# 类访问修饰符偏移: -2
+AccessModifierOffset: -2

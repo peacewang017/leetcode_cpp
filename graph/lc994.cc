@@ -1,4 +1,5 @@
 #include <pthread.h>
+
 #include <utility>
 #include <vector>
 
@@ -11,7 +12,7 @@ class Solution {
     }
 
     // 返回新被污染的橘子数
-    int rot(vector<vector<int>>& grid, int x, int y, vector<pair<int, int>> &rotted_orange) {
+    int rot(vector<vector<int>>& grid, int x, int y, vector<pair<int, int>>& rotted_orange) {
         int new_rotted = 0;
         int m = grid.size(), n = grid[0].size();
         if (inside(m, n, x - 1, y) && grid[x - 1][y] == 1) {

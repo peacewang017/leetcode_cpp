@@ -3,7 +3,7 @@
 using namespace std;
 
 class Solution {
-public:
+  public:
     int findDuplicate(vector<int>& nums) {
         int n = nums.size();
         for (auto num : nums) {

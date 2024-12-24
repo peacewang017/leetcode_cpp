@@ -3,12 +3,12 @@
 using namespace std;
 
 class Solution {
-private:
+  private:
     void remove_all_near_char1(vector<vector<char>>& grid, int i, int j) {
         int m = grid.size(), n = grid[0].size();
         if (i < 0 || i >= m || j < 0 || j >= n) {
             return;
-        } 
+        }
         if (grid[i][j] != '1') {
             return;
         }
@@ -19,7 +19,7 @@ private:
         remove_all_near_char1(grid, i, j + 1);
     }
 
-public:
+  public:
     int numIslands(vector<vector<char>>& grid) {
         if (grid.empty()) {
             return 0;

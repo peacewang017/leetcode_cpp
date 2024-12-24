@@ -4,7 +4,7 @@
 using namespace std;
 
 class Solution {
-public:
+  public:
     vector<vector<int>> threeSum(vector<int>& nums) {
         int n = nums.size();
         vector<vector<int>> ans;
@@ -43,7 +43,7 @@ public:
                     j++;
                     while (j < k && nums[j] == nums[j - 1]) {
                         j++;
-                    }    
+                    }
                 }
             }
         }

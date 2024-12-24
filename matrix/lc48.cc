@@ -3,7 +3,7 @@
 using namespace std;
 
 class Solution {
-public:
+  public:
     void rotate(vector<vector<int>>& matrix) {
         int n = matrix.size();
         int mid = (n - 1) / 2;

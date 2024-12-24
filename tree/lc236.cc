@@ -3,8 +3,8 @@
 using namespace std;
 
 class Solution {
-public:
-    TreeNode *ans;
+  public:
+    TreeNode* ans;
     // 递归函数的意义是：以 root 为根的树中是否存在 p 或 q
     bool dfs(TreeNode* root, TreeNode* p, TreeNode* q) {
         if (!root || !p || !q) {
